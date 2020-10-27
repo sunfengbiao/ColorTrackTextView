@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <com.sunfb.colortracktextview.ColorTrackTextView
+       android:id="@+id/cctv_text"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="S_Fbuner"
+       android:layout_centerInParent="true"
+       android:gravity="center"
+       app:originColor="@android:color/black"
+       app:changeColor="@android:color/holo_red_dark"
+       tools:ignore="MissingConstraints" />
+
+   <Button
+       android:onClick="leftToRight"
+       android:layout_alignParentBottom="true"
+       android:text="左到右"
+       android:id="@+id/left_to_right"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" />
+   <Button
+       android:onClick="rightToLeft"
+       android:layout_alignParentRight="true"
+       android:layout_alignParentBottom="true"
+       android:text="右到左"
+       android:id="@+id/right_to_left"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" />
+
+</RelativeLayout>
